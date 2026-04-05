@@ -25,7 +25,7 @@ jobs:
       run: npm ci
       
     - name: Run Linter
-      run: npm run lint
+      run: npm run lint -- .
       
     - name: Run Tests
       run: npm run test
@@ -33,4 +33,4 @@ jobs:
     - name: Build Application
       run: npm run build
       env:
-        NEXT_PUBLIC_APP_URL: "http://localhost:3000"
+        NEXT_PUBLIC_APP_URL: "https://localhost:3000"
